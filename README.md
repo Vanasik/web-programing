@@ -1,2 +1,2 @@
 # web-programing
-https://Vanasik.github.io/Markdown/cv
+https://Vanasik.github.io/gh-pages/cv
