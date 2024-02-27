@@ -1,4 +1,4 @@
-![it's me](me.jpg)
+![it's me](https://github.com/Vanasik/web-programing/blob/gh-pages/me.jpg?raw=true)
 # SHELEPEN' IVAN #
 ### Student | Beginer in programing ###
 ## My contacts: ##
