@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorisation</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <!-- Главный контент -->
+    <main>
+        <div id="registration-page" class="registration-page">
+            <h1>Авторизация пользователя</h1>
+            <form id="login-form">
+                <!-- Поле для ввода Логина -->
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" required>
+                <div class="error" id="login-error"></div>
+
+                <!-- Поле для ввода пароля -->
+                <label id="password-label" for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error" id="password-error"></div>
+
+                <!-- Кнопка авторизации -->
+                <button type="submit" id="register-button">Авторизироваться</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./registration.js"></script>
+    <script src="./autorisation.js"></script>
+</body>
+</html>

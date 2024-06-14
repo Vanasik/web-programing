@@ -1,0 +1,280 @@
+@media screen and (max-width: 320px) {
+
+    .page1{
+        width: 320px;
+        height: auto;
+    }
+
+    .section1{
+        height: auto;
+        min-height: 570px;
+        max-height: 4000px;
+    }
+
+    .media320{
+        display: flex;
+        gap:9px;
+        align-items:center;
+    }
+
+    .lefthead>button{
+        display: none;
+    }
+
+    .part1{
+        display: none;
+    }
+
+    .header{
+        padding-top: 22px;
+        margin-left: -3px;
+        gap: 58px;
+    }
+
+    .log{
+        width: 40px;
+        height: 40px;
+    }
+
+    .text-section1>h1 {
+        font-size: 50px;
+        line-height: 160%;
+    }
+
+    .content-section1 {
+        margin-top: 76px;
+        gap: 16px;
+    }
+
+    .dif7{
+        width: 66.62%;
+        margin-left: 53px;
+    }
+
+    .text1-section1>h3{
+        font-size: 18px;
+        line-height: 138%;
+    }
+
+    .content-section1>button.startnow {
+        margin-left: 70px;
+        margin-top: 58px;
+    }
+
+    .section2{
+        height: auto;
+        min-height: 590px;
+        max-height: 3000px;
+    }
+
+    .maincontent>div>h2{
+        font-size: 45px;
+        line-height: 156%;
+        text-align: center;
+    }
+
+    .maincontent{
+        margin-left: 0;
+        gap: 19px;
+    }
+
+    .text-section2{
+        gap: 30px;
+        align-items:center;
+    }
+
+    .dif{
+        margin-left: 71px;
+        margin-top: 0;
+    }
+
+    .image-section2 {
+        margin-top: 9px;
+    }
+    .content-card{
+        width: 287px;
+    }
+
+.cards{
+    width: 320px;
+}
+
+.card{
+    width: 320px;
+}
+
+    .section3{
+        height: auto;
+        min-height: 1916px;
+        max-height: 4000px;
+    }
+
+    .content-section3>div>h2{
+        font-size: 45px;
+        line-height: 156%;
+        text-align: center;
+    }
+
+    .content-section3>div>h3{
+        line-height: 107%;
+        text-align: center;
+    }
+
+    .content-section3{
+        gap: 69px;
+    }
+
+    .section4{
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        min-height: 617px;
+        max-height: 3000px;
+    }
+
+    .content-section4{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 21px;
+        gap: 36px;
+    }
+
+    .content-section4>h2{
+        font-size: 45px;
+        line-height: 111%;
+        text-align: center;
+    }
+
+    .content-section4>p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-section4{
+        width: 100%;
+        height: 213px;
+    }
+
+    .section5{
+        height: auto;
+        margin-top: 32px;
+        min-height: 450px;
+        max-height: 3000px;
+    }
+
+    .rightside{
+        display: none;
+    }
+
+    .content-section5{
+        margin-left: 0;
+        width: 100%;
+        padding-top: 91px;
+        gap: 20px;
+    }
+
+    .content-section5>h2{
+        font-size: 45px;
+        line-height: 111%;
+        text-align: center;
+        width: 80%;
+        margin-left: 31px;
+    }
+
+    .content-section5>h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .section6{
+        flex-direction: column;
+        height: auto;
+        min-height: 703;
+        max-height: 3000px;
+    }
+
+    .leftside>button.SeeDetails{
+        display: none;
+    }
+
+    .leftside>h2{
+        font-size: 45px;
+        line-height: 111%;
+        text-align: center;
+    }
+
+    .leftside{
+        margin-top: 88px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .questions>a>h3{
+        text-align: center;
+        font-size: 20px;
+        line-height: 175%;
+    }
+
+    .questions>h3{
+        text-align: center;
+    }
+
+
+    .questions{
+        margin-top: 20px;
+    }
+
+
+    .section7{
+        display: none;
+        height: auto;
+        min-height: 703px;
+        max-height: 3000px;
+    }
+
+    .dif12{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 43px;
+        height: auto;
+        min-height: 584px;
+        max-height: 3000px;
+        width: 320px;
+    }
+
+    .content-footer{
+        margin-left: 0;
+        width: 100%;
+        align-items:center;
+        padding-top: 85px;
+        gap: 30px;
+    }
+
+    .links{
+        width: 100%;
+        margin-top: -14px;
+        justify-content: center;
+    }
+
+    .body{
+        gap: 10px;
+        align-items:center;
+    }
+
+    .adminfooter{
+        font-size: 40px;
+        line-height: 125%;
+    }
+
+    .link{
+        align-items:center;
+    }
+
+    .icons{
+        margin-top:0;
+    }
+}
+
