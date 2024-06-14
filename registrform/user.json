@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "phone": "+375291234567",
+        "email": "ivanov@example.com",
+        "birthdate": "1990-04-15",
+        "password": "ExamplePassword123!",
+        "fio": "Иванов Иван Иванович",
+        "nickname": "IvanIvanov",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "phone": "+375292345678",
+        "email": "petrov@example.com",
+        "birthdate": "1985-05-20",
+        "password": "AnotherPass456$",
+        "fio": "Петров Петр",
+        "nickname": "PetrPetrov",
+        "role": "admin"
+    },
+    {
+        "id": 3,
+        "phone": "+375293456789",
+        "email": "sidorov@example.com",
+        "birthdate": "1995-07-30",
+        "password": "Secure*789pass",
+        "fio": "Сидоров Сидор Сидорович",
+        "nickname": "SidorSidorov",
+        "role": "admin"
+    }
+]
