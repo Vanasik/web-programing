@@ -1,0 +1,285 @@
+@media screen and (max-width: 768px) {
+
+    .page1{
+        width: 768px;
+        height: auto;
+    }
+
+.section1{
+    min-height: 800px;
+    max-height: 2000px;
+    height: auto;
+}
+
+    .header{
+        gap:15.06%;
+        padding-top: 36px;
+        margin-left: 37px;
+    }
+
+    .lefthead{
+        flex-direction: column;
+        gap: 17px;
+        align-items:flex-start;
+
+    }
+
+.media320{
+    display: none;
+}
+
+    .startnow{
+        width: 142px;
+    }
+
+    .part11{
+        width: 52.21%;
+        
+    }
+
+    .part1{
+        margin-top: 10px;
+        width: 64.46%;
+        gap:2.34%;
+        margin-top: -50px;
+    }
+
+    .dif7{
+        width: 46.62%;
+        font-size: 84px;
+        line-height: 95%;
+        text-align: center;
+        margin-left: 205px;
+    }
+
+    .text-section1>h1{
+        font-size: 84px;
+        line-height: 95%;
+    }
+
+
+    .text1-section1{
+    font-size: 28px;
+    line-height: 71%;
+    gap:0;
+    }
+
+    .content-section1{
+        gap:69px;
+        margin-top: 69px;
+    }
+
+    .content-section1>button.startnow {
+        margin-left: 293px;
+    }
+
+    .big{
+        width: 182px;
+    }
+
+    .section2{
+        flex-direction: column;
+        height: auto;
+        min-height: 742px;
+        max-height: 2000px;
+        gap:0;
+
+    }
+
+    .maincontent{
+        margin-top: 51px;
+        margin-left: 4.7%;
+        gap: 69px;
+    }
+
+    .text-section2{
+        gap: 20px;
+    }
+
+    .dif{
+        margin-left: 461px;
+        margin-top: -193px;
+    }
+
+    .image-section2{
+        margin-top: 75px;
+    }
+
+    .content-section3{
+        gap: 66px;
+        align-items: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        width:334px;
+    }
+
+    .section3{
+        height: auto;
+        min-height: 1877px;
+        max-height: 4000px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .section4{
+        margin-top: 50px;
+        height: auto;
+        min-height: 463px;
+        max-height: 4000px;
+        gap: 29px;
+    }
+
+    .image-section4{
+        width: 278px;
+    }
+
+    .image-section4>img{
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .content-section4{
+        margin-left: 36px;
+        width: 55.46%;
+        margin-top: 40px;
+    }
+
+    .content-section4>button{
+        margin-left: 64px;
+    }
+
+.questions{
+    margin-top: 140px;
+}
+
+    .section5{
+        margin-top: 50px;
+        height: auto;
+        gap:93px;
+        min-height: 600px;
+        max-height: 4000px;
+    }
+
+    .content-section5 {
+        padding-top: 126px;
+        margin-left: 35px;
+        width: 41.53%;
+        gap: 13px;
+    }
+
+    .dif8{
+        display: none;
+    }
+
+    .dif9{
+        margin: 0px;
+    }
+
+    .rightside>h1{
+        font-size: 72px;
+        line-height: 111%;
+    }
+
+    .content-section5>h3 {
+        width: 103%;
+    }
+
+    .rightside{
+        justify-content: start;
+        margin-top: 71px;
+    }
+
+    .leftside{
+        width: 34.38%;
+        margin-top: 187px;
+        margin-left: 35px;
+    }
+
+    .section6{
+        gap:27px;
+        height: auto;
+        min-height: 600px;
+        max-height: 4000px
+    }
+
+    .questions>h3{
+        font-size: 20px;
+        line-height: 245%;
+    }
+
+    .questions>a>h3{
+        font-size: 20px;
+        line-height: 175%;
+    }
+
+    .section7{
+        height: auto;
+        min-height: 430px;
+        max-height: 4000px;
+    }
+
+    .section7>h2{
+        width: 74.43%;
+        text-align: center;
+        padding-top: 37px;
+        margin-left: 99px;
+    }
+
+    .reviews{
+        margin-left: 51px;
+        margin-top: 54px;
+        gap: 56px;
+    }
+
+    .review>h3,.review1>h3,.review2>h3{
+        font-size: 24px;
+        line-height: 125%;
+    }
+
+    .review{
+        width: 28%;
+    }
+
+    .review1{
+        width: 21.77%;
+        gap: 13px;
+    }
+
+    .review2{
+        width: 26.77%;
+    }
+
+    footer{
+        width: 768px;
+        height: auto;
+        gap: 39px;
+        min-height: 557px;
+        max-height: 3000px;
+    }
+
+    .dif11{
+        display: none;
+    }
+
+    .content-footer{
+        padding-top: 124px;
+        margin-left: 51px;
+        width: 40.89%;
+    }
+
+    .links{
+        width: 41%;
+        gap: 35px;
+        margin-top: 188px;
+    }
+
+    .icons{
+        margin-top: 23px;
+    }
+
+
+}

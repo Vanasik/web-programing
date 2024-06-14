@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Основные стили для страницы */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Стили для контейнера формы */
+.registration-page {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Анимация для плавного появления */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Заголовок */
+.registration-page h1 {
+    text-align: center;
+    margin-bottom: 42px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7px;
+    margin-left: -10px;
+}
+
+/* Стили для меток (label) */
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Стили для полей ввода (input) */
+form input[type="login"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form input[type="text"] {
+    padding: 9px;
+    margin-bottom: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="login"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus {
+    border-color: #7140EB;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+/* Стили для чекбоксов (checkbox) */
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Стили для ошибок */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопки */
+form button[type="submit"],
+form button[type="button"],
+form button[type="Autorisation"] {
+    background-color: #7140EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.Autorisation{
+    background-color: #7140EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+form button[type="submit"]:hover,
+form button[type="button"]:hover {
+    background-color: #7140EB;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Стили для секции пароля */
+#password-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для контейнера согласия с условиями */
+.agreement-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Улучшение внешнего вида кнопки генерации никнейма */
+form button[type="button"] {
+    display: inline-block;
+    background-color: #7140EB;
+    margin-bottom: 20px;
+}
+
+form button[type="button"]:hover {
+    background-color: #7140EB;
+}
+

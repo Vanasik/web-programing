@@ -1,0 +1,181 @@
+@media screen and (max-width: 768px) {
+
+    .page4{
+        height: auto;
+        width: 768px;
+    }
+
+    .dif48{
+        display: flex;
+    }
+
+    .header{
+        gap:15.06%;
+        padding-top: 36px;
+        margin-left: 37px;
+    }
+
+
+    .lefthead{
+        flex-direction: column;
+        gap: 17px;
+        align-items:flex-start;
+
+    }
+
+    .startnow{
+        width: 142px;
+    }
+
+    .part11{
+        width: 52.21%;
+        
+    }
+
+    .part1{
+        margin-top: 10px;
+        width: 64.46%;
+        gap:2.34%;
+        margin-top: -50px;
+    }
+
+    .dif45{
+        display: none;
+    }
+    .section41{
+        height: 800px;
+    }
+
+    .content-section41 {
+        margin-top: 288px;
+        margin-left: 61px;
+    }
+
+    .content-section41>div.text-section1>h1 {
+        font-size: 84px;
+        line-height: 95%;
+        width: 72.38%;
+    }
+
+    .content-section41>div.text1-section1>h3 {
+        width: 53.125%;
+    }
+
+.section42{
+    gap: 21px;
+    height: 1090px;
+    width: 100%;
+}
+
+    .leftside-section42 {
+        margin-left: 72px;
+        width: 38%;
+    }
+
+    .rightside-section42 {
+        width: 45%;
+        margin-top: 407px;
+        gap: 30px;
+    }
+
+    .main-42>p {
+        width: 128.86%;
+    }
+
+    .main-42{
+        gap: 45px;
+    }
+
+    .cards42 {
+        flex-direction: column;
+    }
+
+    .dif43{
+        display: none;
+    }
+
+    .section43{
+        padding-left: 0px;
+    }
+
+    .section433{
+        width: 86%;
+        padding-left: 100px;
+        gap: 72px;
+    }
+
+    .card-43{
+        width: 37.2%;
+    }
+
+    .section44{
+        width: 100%;
+        height: 288px;
+        margin-top: 44px;
+    }
+
+    .dif6 {
+        gap: 25px;
+    }
+
+    .section45>div.rightside-section42{
+        width: 52%;
+        margin-top: 499px;
+    }
+
+    .section45>div.leftside-section42{
+width: 38%;
+    }
+    .section45{
+        gap: 0px;
+        height: 990px;
+    }
+
+    .section46>div.section433{
+        flex-direction: column;
+        width: 68%;
+        gap: 24px;
+        padding-left: 187px;
+    }
+
+    .section46>div.section433>div.card-43{
+        width: 51.2%;
+    }
+
+    .section46>div.section433>svg{
+        margin-left: 47px;
+    }
+
+    .section46{
+        width: 93%;
+    }
+
+    footer{
+        width: 768px;
+        height: 557px;
+        gap: 39px;
+    }
+
+    .dif11{
+        display: none;
+    }
+
+    .content-footer{
+        padding-top: 124px;
+        margin-left: 51px;
+        width: 40.89%;
+    }
+
+    .links{
+        width: 41%;
+        gap: 35px;
+        margin-top: 188px;
+    }
+
+    .icons{
+        margin-top: 23px;
+    }
+
+
+
+}

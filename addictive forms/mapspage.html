@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mapspage.css">
+    <link rel="stylesheet" href="../textstyle.css">
+    <link rel="stylesheet" href="../mainpage/mainpage.css">
+    <title>Where you can find us</title>
+</head>
+<body>
+    <div class="mapspage">
+        <h6>Where you can find us?</h6>
+        <p>Just try here</p>
+        <div class="maps"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1098703ca5248131ea174401cf871c3fc24f7ea4507530ae7b3b0867cb63cc58&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+        <button class="SeeDetails1">
+            <h5>Main page</h5>
+            <img src="../icons/strelochka.svg" alt="">
+        </button>
+    </div>
+</body>
+<script>
+    document.querySelector('.SeeDetails1').addEventListener('click', function() {
+        window.location.href = '../mainpage/mainpage.html';
+    });
+</script>
+</html>

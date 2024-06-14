@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <!-- Главный контент -->
+    <main>
+        <div id="registration-page" class="registration-page">
+            <h1>Регистрация пользователя</h1>
+            <form id="registration-form">
+                <!-- Поле для ввода номера телефона -->
+                <label for="phone">Номер телефона (Только для РБ)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+375XXXXXXXXX" required>
+                <div class="error" id="phone-error"></div>
+
+                <!-- Поле для ввода email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="email-error"></div>
+
+                <!-- Поле для ввода даты рождения -->
+                <label for="birthdate">Дата рождения</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <div class="error" id="birthdate-error"></div>
+
+                <!-- Поле для выбора результата обработки пароля -->
+                <label for="password-auto-generation">Задать пароль автоматически</label>
+                <input type="checkbox" id="password-auto-generation" name="passwordAuto" onchange="togglePasswordField()">
+                
+                <!-- Поле для ввода пароля -->
+                <label id="password-label" for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error" id="password-error"></div>
+
+                <!-- Поле для подтверждения пароля -->
+                <label id="confirm-password-label" for="confirm-password">Подтвердите пароль</label>
+                <input type="password" id="confirm-password" name="confirmPassword" required>
+                <div class="error" id="confirm-password-error"></div>
+
+                <!-- Поле для ввода ФИО -->
+                <label for="fio">Фамилия Имя Отчество (Отчество не обязательно)</label>
+                <input type="text" id="fio" name="fio" required>
+                <div class="error" id="fio-error"></div>
+
+                <!-- Поле для ввода/генерации никнейма -->
+                <label for="nickname">Никнейм</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <button type="button" onclick="generateNickname()">Сгенерировать никнейм</button>
+                <div class="error" id="nickname-error"></div>
+
+                <!-- Поле для согласия с Пользовательским соглашением -->
+                <label for="agreement" class="agreement-container">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    Я прочитал и согласен с условиями Пользовательского соглашения
+                </label>
+                <div class="error" id="agreement-error"></div>
+
+                <!-- Кнопка регистрации -->
+                <button type="submit" id="register-button" disabled>Зарегистрироваться</button>
+
+                <label for="autorisation">Уже есть аккаунт? Авторизуйся прямо щас</label>
+                <button class="Autorisation">АВТОРИЗОВАТЬСЯ</button> 
+            </form>
+        </div>
+    </main>
+
+    <script src="./registration.js"></script>
+</body>
+</html>
