@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your future is electric</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../mainpage/mainpage.css" id="theme">
+    <link rel="stylesheet" href="../textstyle.css">
+    <link rel="stylesheet" href="../media1/media768.css">
+    <link rel="stylesheet" href="../media1/media320.css">
+    <link rel="stylesheet" href="../addictive forms/burgermenu.css">
+    <link rel="stylesheet" href="../addictive forms/logout.css">
+    <style>
+        .header-toggle:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: all 0.3s;
+        }
+        .header-toggle.active:before {
+            left: 21px;
+        }
+        .navigation {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+
+        .users {
+            margin-top: -500px;
+            text-align: left;
+            padding: 10px 20px;
+            background-color: #c37af1;
+            border: none;
+        }
+        .users p {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<header class="section1">
+    <nav class="header">
+        <div class="lefthead">
+            <div><img src="../icons/Dance.svg" alt=""></div>
+            <button id="themeswich"><img src="../icons/theme.svg" alt=""></button>
+        </div>
+        <div class="part1">
+            <ul class="part11">
+                <li><a data-i18n="Just" href="../firstpage/firstpage.html">Just dance</a></li>
+                <li><a data-i18n="Rides" href="../secondpage/secondpage.html">Rides</a></li>
+                <li><a data-i18n="Service" href="../thirdpage/thirdpage.html">Service</a></li>
+            </ul>
+            <button class="select-language">
+                <p>en</p>
+                <img src="../icons/Ugolok.svg" alt="">
+            </button>
+            <button class="startnow">
+                <p data-i18n="StartNow">Start now</p>
+            </button>
+            <img class="login-icon" src="../icons/login.svg" alt="Login Icon" style="display: none;">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="user-name"></p>
+                    <button id="logout-button" data-i18n="LogOut">Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="media320">
+            <img class="log" src="../icons/login.svg" alt="">
+            <div class="burger">
+                <button class="burgerimg">
+                    <img src="../icons/burger.svg" alt="">
+                </button>
+                <div class="display">
+                    <div class="burgermenu">
+                        <div class="headburger">
+                            <div><img src="../icons/Dance.svg" alt=""></div>
+                            <button class="burgerbutton1"><img src="../icons/krestik.svg" alt=""></button>
+                        </div>
+                        <div class="burger-navigation"> 
+                            <ul>
+                                <li><a data-i18n="Just" href="../firstpage/firstpage.html">Just dance</a></li>
+                                <li><a data-i18n="Rides" href="../secondpage/secondpage.html">Rides</a></li>
+                                <li><a data-i18n="Service" href="../thirdpage/thirdpage.html">Service</a></li>
+                            </ul>
+                        </div>
+                        <button class="burgerbutton2"><img src="../icons/language.svg" alt=""></button>
+                        <button class="burgerbutton3"><img src="../icons/theme.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="users">
+        <h2>Recent Users</h2>
+        <div id="user-list"></div>
+    </div>
+<script>
+    
+    var userslocal = JSON.parse(localStorage.getItem('users')) || []; // Предполагая, что userslocal - это массив пользователей из локального хранилища
+var usersjson;
+var users = [];
+
+fetch('../registrform/user.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Ой, ошибка в fetch: ' + response.statusText);
+    }
+    return response.json();
+  })
+  .then(jsonData => {
+    usersjson = jsonData;
+
+    // Объединение массивов usersjson и userslocal
+    var usersfetch = usersjson.concat(userslocal);
+    users = usersfetch;
+
+    // Вывод последних 6 никнеймов
+    displayLastSixUsers(users);
+  })
+  .catch(error => {
+    console.error('Ошибка:', error);
+  });
+
+function displayLastSixUsers(users) {
+    var lastthreeUsers = users.slice(-3);
+
+    const userList = document.getElementById('user-list');
+    lastthreeUsers.forEach(user => {
+            const userItem = document.createElement('p');
+            userItem.textContent = `${user.nickname} - ${user.email}`;
+            userList.appendChild(userItem);
+        });
+}
+</script>
+
+</body>
+</html>
